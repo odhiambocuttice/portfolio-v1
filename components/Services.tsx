@@ -50,41 +50,6 @@ const ProjectsData = [
   }
 ]
 
-// const Services = () => {
-//   return (
-//     <div className="">
-//       <h1 className="text-4xl font-medium mb-12 text-center text-cyan-100">Services</h1>
-//       <div className="max-w-7xl mx-auto columns-1 md:columns-2 lg:columns-3 gap-4">
-//         {ProjectsData.map((project, index) => (
-//           <div
-//             key={project.id}
-//             className="break-inside-avoid mb-4"
-//           >
-//             <div className={`p-4 rounded-xl ${project.color} bg-gradient-to-br hover:scale-105 transition-transform duration-300 group-hover:scale-105`}>
-//               <div className="mb-1 text-sm font-medium text-white">
-//                 {project.name}
-//               </div>
-//               <div className="text-sm font-normal text-white/60 mb-3">
-//                 {project.description}
-//               </div>
-//               <div className="flex flex-wrap gap-2">
-//                 {project.technologies.map((tech, techIndex) => (
-//                   <span
-//                     key={techIndex}
-//                     className="inline-block px-2 py-1 text-xs rounded-full 
-//                       bg-white/10 text-white/70"
-//                   >
-//                     {tech}
-//                   </span>
-//                 ))}
-//               </div>
-//             </div>
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   )
-// }
 
 const Services = () => {
   const [isMobile, setIsMobile] = useState(false)
@@ -145,7 +110,7 @@ const Services = () => {
       {/* Desktop View */}
       <div className="hidden md:block">
         <div className="max-w-7xl mx-auto columns-1 md:columns-2 lg:columns-3 gap-4">
-          {ProjectsData.map((project, index) => (
+          {ProjectsData.map((project) => (
             <div
               key={project.id}
               className="break-inside-avoid mb-4"

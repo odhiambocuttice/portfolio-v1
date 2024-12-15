@@ -40,7 +40,7 @@ export default function Home() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="max-w-2xl w-full text-center"
         >
-          <h1 className="text-4xl font-medium mb-6 text-cyan-100">Hi, I'm Cuttice</h1>
+          <h1 className="text-4xl font-medium mb-6 text-cyan-100">Hi, I am Cuttice</h1>
           <p className="text-2xl mb-4 text-white/80">
           Currently a frontend developer with past experience as a Django backend engineer. <br />  <br /> 
           Passionate about building user-focused products that make a real-world impact by blending intuitive design with robust functionality.
