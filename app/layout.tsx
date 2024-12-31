@@ -8,7 +8,7 @@ import Navbar from "@/components/Navbar"
 
 export const metadata: Metadata = {
   title: "Cuttice's Portfolio",
-  description: "Cuttice Odhiambo's Portfolio",
+  description: "Currently a frontend developer with past experience as a Django backend engineer.",
 }
 
 export default function RootLayout({
