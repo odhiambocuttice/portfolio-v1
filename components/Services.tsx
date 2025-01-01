@@ -6,18 +6,20 @@ import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext
 import { Card, CardContent } from "./ui/card"
 import { motion } from "framer-motion"
 // import { RichText } from '@payloadcms/richtext-lexical/react'
-import { SerializedEditorState } from '@payloadcms/richtext-lexical/lexical'
+// import { SerializedEditorState } from '@payloadcms/richtext-lexical/lexical'
 
-interface ServiceInterface {
-  name: string
-  description: SerializedEditorState
-  technology: string[]
-  size: string
-  color: string
-}
+// interface ServiceInterface {
+//   name: string
+//   description: SerializedEditorState
+//   technology: string[]
+//   size: string
+//   color: string
+// }
 
 
-const Services = ({ data }: { data: ServiceInterface[] }) => {
+const Services = (
+  // { data }: { data: ServiceInterface[] }
+) => {
   const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
