@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Font imports for all 4 variations */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap');
 
 :root {
   --foreground-rgb: 255, 255, 255;
@@ -13,4 +19,176 @@
   :root {
     --radius: 0.5rem;
   }
+
+  /* Variation 1: Brutalist Minimalism */
+  .v1 {
+    --v1-bg: #ffffff;
+    --v1-fg: #000000;
+    --v1-accent: #FF0000;
+    --v1-border: 4px;
+  }
+
+  /* Variation 2: Neo-Brutalism */
+  .v2 {
+    --v2-bg: #FFF8E7;
+    --v2-fg: #000000;
+    --v2-yellow: #FFE500;
+    --v2-cyan: #00F0FF;
+    --v2-pink: #FF006E;
+    --v2-lime: #CCFF00;
+    --v2-shadow: 8px 8px 0 black;
+  }
+
+  /* Variation 3: Swiss Design */
+  .v3 {
+    --v3-bg: #FFFFFF;
+    --v3-fg: #000000;
+    --v3-accent: #FF0000;
+    --v3-gray: #F5F5F5;
+  }
+
+  /* Variation 4: Japanese Minimalism */
+  .v4 {
+    --v4-bg: #FAFAF9;
+    --v4-fg: #292524;
+    --v4-warm-gray: #A8A29E;
+    --v4-accent: #C2410C;
+    --v4-beige: #F5F5F4;
+  }
+}
+
+/* Utility classes for each variation's fonts */
+.font-brutalist {
+  font-family: 'Space Mono', monospace;
+}
+
+.font-brutalist-display {
+  font-family: 'Archivo Black', sans-serif;
+}
+
+.font-neo {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.font-neo-display {
+  font-family: 'Syne', sans-serif;
+}
+
+.font-swiss {
+  font-family: 'Manrope', sans-serif;
+}
+
+.font-zen {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.font-zen-display {
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Custom scrollbar for each variation */
+.v1::-webkit-scrollbar,
+.v2::-webkit-scrollbar,
+.v3::-webkit-scrollbar,
+.v4::-webkit-scrollbar {
+  width: 8px;
+}
+
+.v1::-webkit-scrollbar-thumb {
+  background: #000;
+}
+
+.v2::-webkit-scrollbar-thumb {
+  background: #000;
+  border: 2px solid #FFF8E7;
+}
+
+.v3::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}
+
+.v4::-webkit-scrollbar-thumb {
+  background: #A8A29E;
+  border-radius: 4px;
+}
+
+/* Paper texture overlay for Japanese Minimalism */
+.paper-texture {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.02;
+}
+
+/* Neo-brutalism shadow utilities */
+.neo-shadow {
+  box-shadow: 8px 8px 0 black;
+}
+
+.neo-shadow-sm {
+  box-shadow: 4px 4px 0 black;
+}
+
+.neo-shadow-lg {
+  box-shadow: 12px 12px 0 black;
+}
+
+.neo-shadow-hover {
+  transition: box-shadow 0.15s ease-out, transform 0.15s ease-out;
+}
+
+.neo-shadow-hover:hover {
+  box-shadow: 12px 12px 0 black;
+  transform: translate(-4px, -4px);
+}
+
+/* Variation 5: Organic Luxury / Creative Atelier */
+.v5 {
+  --v5-cream: #F7F5F0;
+  --v5-cream-dark: #EBE8E0;
+  --v5-fg: #2D2A26;
+  --v5-muted: #6B6660;
+  --v5-sage: #7C8B7A;
+  --v5-sage-light: #E8EDE7;
+  --v5-accent: #8B7355;
+}
+
+.font-atelier {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.font-atelier-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.v5::-webkit-scrollbar {
+  width: 6px;
+}
+
+.v5::-webkit-scrollbar-thumb {
+  background: #7C8B7A;
+  border-radius: 3px;
+}
+
+/* Organic shadow utilities for V5 */
+.organic-shadow {
+  box-shadow: 0 8px 32px rgba(45, 42, 38, 0.08);
+}
+
+.organic-shadow-lg {
+  box-shadow: 0 16px 48px rgba(45, 42, 38, 0.12);
+}
+
+.organic-shadow-hover {
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+.organic-shadow-hover:hover {
+  box-shadow: 0 20px 56px rgba(45, 42, 38, 0.16);
+  transform: translateY(-4px);
+}
+
+/* Glassmorphism card for V5 */
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
