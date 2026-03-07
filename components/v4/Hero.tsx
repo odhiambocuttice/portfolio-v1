@@ -1,25 +1,9 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Github, Linkedin, Palette, Download, ArrowDown } from 'lucide-react'
 import Image from 'next/image'
 
-const socialLinks = [
-    { href: 'https://github.com/odhiambocuttice', icon: Github, label: 'GitHub' },
-    { href: 'https://www.linkedin.com/in/cuttice-odhiambo-6a7a3624a/', icon: Linkedin, label: 'LinkedIn' },
-    { href: 'https://www.behance.net/cuttice', icon: Palette, label: 'Behance' },
-]
-
 export function Hero() {
-    const handleDownload = () => {
-        if (typeof window !== 'undefined') {
-            const link = document.createElement('a')
-            link.href = '/Cuttice Odhiambo - CV.pdf'
-            link.download = 'Cuttice_Odhiambo - CV.pdf'
-            link.click()
-        }
-    }
-
     return (
         <section className="min-h-screen bg-[#FAFAF9] text-[#292524] font-zen relative overflow-hidden">
             {/* Subtle texture overlay */}
