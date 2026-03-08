@@ -27,7 +27,7 @@ const companies: Company[] = [
         company: 'GroupApp Inc',
         roles: [
             {
-                role: 'Mobile App Developer',
+                role: 'Frontend & Mobile App Developer',
                 period: '2026 — Present',
                 summary: 'Expanded scope into mobile — bringing the platform\'s web experience to React Native and giving the app a modern redesign.',
                 bullets: [
