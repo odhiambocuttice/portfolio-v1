@@ -48,10 +48,6 @@ jobs:
           claude_args: >-
             --mcp-config '{"mcpServers":{"playwright":{"command":"npx","args":["@playwright/mcp@latest"]}}}'
             --allowedTools mcp__playwright__playwright_navigate,mcp__playwright__playwright_screenshot,mcp__playwright__playwright_click,mcp__playwright__playwright_fill
-
-          prompt: |
-            The project is already set up with all dependencies installed.
-            The server is already running at localhost:3000. If needed, use the mcp__playwright
-            set of tools to launch a browser and interact with the app.
+            --system-prompt 'The project is already set up with all dependencies installed. The server is already running at localhost:3000. If needed, use the mcp__playwright set of tools to launch a browser and interact with the app.'
         
 
