@@ -87,9 +87,9 @@ export function Hero() {
                         initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.6, duration: 0.8 }}
-                        className="hidden lg:flex items-center justify-center"
+                        className="flex items-center justify-center"
                     >
-                        <div className="relative w-72 h-[420px] rotate-3">
+                        <div className="relative w-56 h-[320px] sm:w-64 sm:h-[380px] lg:w-72 lg:h-[420px] rotate-3">
                             {/* Card with headshot */}
                             <div className="absolute inset-0 rounded-3xl shadow-2xl overflow-hidden">
                                 <Image
